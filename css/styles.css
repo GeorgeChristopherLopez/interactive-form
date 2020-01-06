@@ -26,10 +26,10 @@ li{
     grid-template-columns: 1fr;
 
 }
-.card ul {
+.payment .card {
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
 }
 .activities{
     background: pink;

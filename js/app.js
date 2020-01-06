@@ -1,13 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, intitial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>interactive form</title>
-</head>
-<body>
-    <div class="header"></div>
+document.querySelector('.container');
+container.innerHTML = `
+   <div class="header"></div>
     <div class="form">
         <form>
             <fieldset style="display:grid; grid-template-columns:1fr;">
@@ -168,6 +161,7 @@
             </fieldset>
         </form>
     </div>
-    <script src="js/app.js"></script>
-</body>
-</html>
+
+
+
+`;
