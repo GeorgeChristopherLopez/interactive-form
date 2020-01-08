@@ -1,38 +1,67 @@
-ul {
-    
+* {
+    margin: 0;    
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #A3C3A1;
+}
+form {
+    background-color: #D4D1CD;
+    margin: 5% 25% 0;
+    padding: 1%;
+}
 li{
     list-style: none;
 }
+.hide{
+    display:none;
+}
+.header{
+  
+    text-align: center;
+}
+fieldset{
+   padding: 1rem;
+
+}
+    .basic-info label, .basic-info input, .basic-info select, .basic-info option {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: .5rem;
+        margin: 0 auto;
+        width: 95%;
+    }
 
 .tshirts li{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-}
-.tshirts li select{
 
- font-size: 1rem;
 }
 .tshirts ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    
-    grid-gap: 1rem;
+    grid-template-columns: 5% 20% 50%;
+  
+    grid-gap: 2rem;
 }
-.card li {
+
+.payment-info{
     display: grid;
     grid-template-columns: 1fr;
+}
+.card-info ul {
+    display: grid;
+    grid-template-columns: 5% 20% 50%;
+}
 
-}
-.payment .card {
+.card-info li{
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
 }
+
+
 .activities{
-    background: pink;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 1fr;
 }
