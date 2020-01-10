@@ -9,7 +9,7 @@ body {
 }
 form {
     background-color: #D4D1CD;
-    margin: 5% 25%;
+    margin: 5% 20%;
     padding: 1%;
 }
 li{
@@ -19,7 +19,7 @@ li{
     display:none;
 }
 .header {
-    margin-top: 12rem;
+    margin-top: 8rem;
     text-align: center;
 }
 fieldset{
@@ -53,14 +53,18 @@ fieldset{
     display: grid;
     grid-template-columns: 1fr;
 }
-.card-info ul {
-    display: grid;
-    grid-template-columns: 5% 20% 50%;
-}
 
-.card-info li{
+ul.card-info {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 50% 17% 17%;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+}
+.card-info li, .card-info input, .card-info label{
+display: grid;
+grid-template-columns: 1fr;
+width: 100%;
 }
 
 

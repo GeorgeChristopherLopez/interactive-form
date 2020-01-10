@@ -63,15 +63,12 @@ container.innerHTML = `
             </select>
             </li>
             </ul>
-
             </fieldset>
             <fieldset class="activities">
                 <legend>Register for Activities</legend>
-              
+        
                         <input type="checkbox" class="main" /> <label id="main" for="main">Main Conference - $200</label>
                         <input type="checkbox" class="frameworks" /> <label for="frameworks"> JavaScript Frameworks Workshop - $200</label>
-
-               
             </fieldset>
             <fieldset class="payment-info">
                 <legend>Payment Info</legend>
