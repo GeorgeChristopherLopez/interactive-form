@@ -19,7 +19,7 @@ li{
     display:none;
 }
 .header {
-    margin-top: 8rem;
+    margin: 3rem;
     text-align: center;
 }
 fieldset{
@@ -38,17 +38,20 @@ fieldset{
     display: grid;
     grid-template-columns: 1fr;
     padding: .5rem;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
 }
 .tshirts ul{
     display: grid;
-    grid-template-columns: 12.5% 33% 50%;
-    margin: 0;
+    grid-template-columns: 1fr;
+    margin: 0 ;
     padding: 0;
     grid-gap: 1rem;
 }
-
+.tshirts{
+    padding: 2rem;
+    padding-left: .5rem;
+}
 .payment-info{
     display: grid;
     grid-template-columns: 1fr;
@@ -56,7 +59,7 @@ fieldset{
 
 ul.card-info {
     display: grid;
-    grid-template-columns: 50% 17% 17%;
+    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
     grid-gap: 1rem;
@@ -71,4 +74,17 @@ width: 100%;
 .activities{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px){
+    .tshirts ul {
+       
+        grid-template-columns: 12.5% 33% 50%;
+     
+    }
+
+    ul.card-info {
+      
+        grid-template-columns: 50% 20% 20%;
+         }
 }
