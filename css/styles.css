@@ -75,7 +75,13 @@ width: 100%;
     display: grid;
     grid-template-columns: 1fr;
 }
-
+.error-msg {
+    display: none;
+    background: red;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
 @media screen and (min-width: 768px){
     .tshirts ul {
        

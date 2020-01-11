@@ -15,17 +15,20 @@
         <div class="form">
             <form>
                 <fieldset class="basic-info">
+                    <div id="basic-error" class="error-msg"><p >BASIC ERROR</p></div>
+                    <hr />
                     <legend>Basic Info</legend>
 
                     <label for="name">Name: </label>
+                   
                     <input id="name" class="name" type="text" required />
-                    <div class="email">
-                  <p>test</p>
-                        <label class="eLabel" for="email">Email: </label>
-                        <input type="email" required />
+                    
+                     
+                        <label for="email">Email: </label>
+                        <div id="email-error" class="error-msg"><p>EMAIL ERROR</p></div>
+                        <input class="email" type="email" required />
 
-                    </div>
-                    <label for="job">Job Role</label>
+                     <label for="job">Job Role</label>
                     <select>
                         <option>Fullstack Javascript Developer</option>
                         <option>Front End Developer</option>
@@ -79,9 +82,20 @@
                 </fieldset>
                 <fieldset class="activities">
                     <legend>Register for Activities</legend>
+                    <div id="activities-error" class="error-msg"><p>Please select at lease one activity</p></div>
+                    <label id="main" for="main"><input value="200" type="checkbox" class="main" />Main Conference - $200   </label>
+                    <label for="frameworks"> <input value="200" type="checkbox" class="frameworks" />JavaScript Frameworks Workshop - $200   </label>
 
-                    <input type="checkbox" class="main" /> <label id="main" for="main">Main Conference - $200</label>
-                    <input type="checkbox" class="frameworks" /> <label for="frameworks"> JavaScript Frameworks Workshop - $200</label>
+                    <label><input type="checkbox" value="100"/>  JavaScript Libraries Workshop — Tuesday 1pm-4pm, $100  </label>
+
+                    <label for="frameworks"> <input value="100" type="checkbox" class="frameworks" />Express Workshop — Tuesday 9am-12pm, $100</label>
+
+                    <label for="frameworks"> <input value="100" type="checkbox" class="frameworks" /> Node.js Workshop — Tuesday 1pm-4pm, $100</label>
+
+                    <label for="frameworks"> <input value="100" type="checkbox" class="frameworks" />Build tools Workshop — Wednesday 9am-12pm, $100</label>
+
+                    <label for="frameworks"> <input value="100" type="checkbox" class="frameworks" /> npm Workshop — Wednesday 1pm-4pm, $100</label>
+                    <div class="total">TOTAL: <span></span></div>
                 </fieldset>
                 <fieldset class="payment-info">
                     <legend>Payment Info</legend>
@@ -93,20 +107,23 @@
                         <option>Paypal</option>
                         <option>Bitcoin</option>
                     </select>
+                    <div id="card-error"class="error-msg"><p >card ERROR</p></div>
+                    <div id="zip-code-error" class="error-msg"><p>zipcode ERROR</p></div>
+                    <div id="cvv-error" class="error-msg"><p >cvv ERROR</p></div>
                     <ul class="card-info">
                         <li>
                             <label>Card Number:</label>
-                            <input type="text" />
+                            <input class="cardNum" type="text" />
 
                         </li>
                         <li>
                             <label>Zip Code:</label>
-                            <input type="text" />
+                            <input class="zipCode" type="text" />
 
                         </li>
                         <li>
-                            <label>CW:</label>
-                            <input type="text" />
+                            <label>CVV:</label>
+                            <input class="cvv" type="text" />
 
                         </li>
                     </ul>
