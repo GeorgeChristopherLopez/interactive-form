@@ -22,8 +22,16 @@ let cvvError = document.querySelector('#cvv-error');
 email.addEventListener('keyup', e => {
     // check if email.value contains
     // @xyz.com 
-    console.log('typing email');
+    if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))) {
+        emailError.style.display = "none";
+        email.style.outline = "1px solid green";
 
+    } else {
+        emailError.style.display = "block";
+        email.style.outline = "1px solid red";
+    
+    }
+  
 });
 
 
@@ -94,4 +102,5 @@ const checkCreditCard = (cardNum, zipCode, cvv) => {
         cvvError.style.display = "block";
         cvv.style.border = "1px solid red";
     }
-    };
+};
+

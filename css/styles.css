@@ -64,13 +64,22 @@ ul.card-info {
     padding: 0;
     grid-gap: 1rem;
 }
-.card-info li, .card-info input, .card-info label{
-display: grid;
-grid-template-columns: 1fr;
-width: 100%;
+.card-info li, .card-info input, .card-info label {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+}
+.card-info input {
+    padding: .5rem;
+}
+.card-info input, .basic-info input {
+    outline: 2px solid #424242;
 }
 
-
+input:focus{
+    outline: 2px solid green;
+}
 .activities{
     display: grid;
     grid-template-columns: 1fr;
@@ -80,7 +89,7 @@ width: 100%;
     background: red;
     color: white;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 @media screen and (min-width: 768px){
     .tshirts ul {
